@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  <!-- Font Awesome -->
+    <link rel="stylesheet" href="trabalho.css"> 
+    <script src="trabalho.js" defer></script> <!--JavaScript -->
+</head>
+<body>
+  <header>
+    <h1>Portfólio pessoal</h1>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showHome()">Início</a></li> <!-- Chama a função para exibir o texto inicial -->
+            <li><a href="#" onclick="showAbout()">Sobre Mim</a></li> <!-- Link para mostrar o texto "Sobre Mim" -->
+            <li><a href="#" onclick="showEducation()">Formação Educacional</a></li> <!-- Link para mostrar o texto "Formação Educacional" -->
+            <li><a href="#" onclick="showPortfolio()">Portfólio</a></li> <!-- Link para abrir o LinkedIn -->
+            <li><a href="#" onclick="showContact()">Contato</a></li> <!-- Link para mostrar o formulário de contato -->
+        </ul>
+    </nav>
+</header>
+
+<main id="main-content">
+    <section id="about-section" style="display: none;">  <!-- Seção "Sobre Mim" -->
+        <h2>Renan Nakamura</h2>
+        <div style="display: flex; align-items: center;">
+          <div style="flex: 1;">
+            <p>Criado em Foz do Iguaçu Paraná, desde pequeno sempre gostei de tecnologia e jogos, aos 13 anos comecei a trabalhar em uma lan house da cidade e com 16 anos, devido ao vôlei ganhei uma bolsa de estudos para estudar em Manaus onde fiquei 1 ano até finalizar o prazo da bolsa. Logo em seguida mudei para Curitiba para estudar Engenharia Agrícola na Universidade Federal do Paraná, porém não tinha condições de me sustentar e acabei morando apenas 6 meses por lá e mudando novamente de cidade, desta vez estava indo para Apucarana estudar Química na Universidade Tecnológica Federaldo Paraná, por ali acabei ficando até finalizar meus estudos e também acabei trabalhando em duas empresas relacionadas à química. Após esse periodo ainda morei em Londrina e depois mudei de estados, indo morar em São Carlos dando início ao mestrado na Universidade de São Paulo, durante a pós graduação ainda morei em outras cidades como Ribeirão Preto, São Paulo e realizei meu intercâmbio em Seul/Coréia do sul. Após essa movimentação em minha vida acadêmica acabei voltando para minha cidade natal Foz do Iguaçu, onde no meio do ano passado dei inicio à uma nova área de conhecimento.
+            </p>
+            </div>
+            <div style="flex-shrink: 0; margin-left: 20px;">
+              <img src="foto.jpg" alt="Renan Nakamura" style="width: 200px; height: auto;">
+          </div>
+      </div>
+    </section>
+
+    <section id="initial-section">   <!-- Seção inicial -->
+        <h2>Bem-vindo ao meu currículo online!</h2>
+        <p>Esta é uma página dedicada ao meu crescimento academico no curso de análise e desenvolvimento de sistemas. Você pode navegar pelos links para saber mais sobre mim, minha formação educacional, ver meu portfólio de projetos que vou construindo durante minha graduação e entrar em contato comigo. Obs. a opção contato ainda não estará funcionando justamente que não é o proposito no momento, porém futuramente irei atualizar para receber e-mails por esta opção e ficará disponível meu contato real.</p>
+    </section>
+
+    <section id="education-section" style="display: none;">  <!-- Seção "Formação Educacional" -->
+        <h2>Formação Educacional</h2>
+        <p>Minha vida academica dei inicio com minha primeira graduação na Universidade Tecnológica Federal do Paraná sendo em química e logo após administração, em seguida fiz duas especializações na Universidade Estadual de Londrina, sendo elas em biotecnologia e economia industrial e por fim meu mestrado Foi realizado na Universidade de São Paulo na área de química. Atualmente estou estudando análise e desenvolvimento de sistemas na UNINTER e tentando me especializar cada vez mais na área. Durante esta jornada acabei aprendendo alguns idiomas para enriquecer meu currículo, sendo fluente em inglês e espanhol, e nível intermediário em japonês, além disso fiz muitos outros cursos na área de química e temas relacionados ao meio ambiente e industria, porém não vem ao propósito do site estes cursos complementares</p>
+    </section>
+
+    <section id="portfolio-section" style="display: none;"> <!-- Seção "Portfólio" -->
+        <h2>Portfólio</h2>
+        <p>Como estou começando agora no mundo da programação não tenho quase nada para mostrar o que é meu de fato, porém conforme vou avançando no curso vou utilizando aqui para ir colocando tudo o que for fazendo. Por enquanto vou deixar disponível aqui meu linkedin e um trabalho que fiz no figma.</p>
+        <div class="portfolio-grid">
+            <!-- Item do portfólio 1 -->
+            <div class="portfolio-item">
+                <img src="Linkedin.jpeg" alt="Linkedin">
+                <div class="overlay">
+                    <a href="https://www.linkedin.com/in/renan-nakamura/" target="_blank">Ver mais</a>
+                </div>
+            </div>
+            <!-- Item do portfólio 2 -->
+            <div class="portfolio-item">
+                <img src="Steam.jpeg" alt="Projeto 1">
+                <div class="overlay">
+                    <a href="https://www.figma.com/proto/SJ7d5OqadrSXTgQhRuIBVL/Untitled?type=design&node-id=37-106&t=2dWG9hTGcQovjigA-0&scaling=min-zoom&page-id=9%3A408" target="_blank">Ver mais</a>
+                </div>
+            </div>    
+    </section>
+
+    <section id="contact-section" style="display: none;">  <!-- Seção "Contato" -->
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+            <div id="form-status"></div> <!-- Div para exibir mensagens de status do formulário -->
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Meu Currículo - Aluno: Renan Nakamura de Jesus RU: 4575630</p>
+</footer>
+
+<script>  // Funções para mostrar e selecionar as seções
+    function showAbout() {
+        var aboutSection = document.getElementById("about-section");
+        var initialSection = document.getElementById("initial-section");
+        var educationSection = document.getElementById("education-section");
+        var portfolioSection = document.getElementById("portfolio-section");
+        var contactSection = document.getElementById("contact-section");
+
+        aboutSection.style.display = "block";
+        initialSection.style.display = "none";
+        educationSection.style.display = "none";
+        portfolioSection.style.display = "none";
+        contactSection.style.display = "none";
+    }
+
+    function showHome() {
+        var aboutSection = document.getElementById("about-section");
+        var initialSection = document.getElementById("initial-section");
+        var educationSection = document.getElementById("education-section");
+        var portfolioSection = document.getElementById("portfolio-section");
+        var contactSection = document.getElementById("contact-section");
+
+        aboutSection.style.display = "none";
+        initialSection.style.display = "block";
+        educationSection.style.display = "none";
+        portfolioSection.style.display = "none";
+        contactSection.style.display = "none";
+    }
+
+    function showEducation() {
+        var aboutSection = document.getElementById("about-section");
+        var initialSection = document.getElementById("initial-section");
+        var educationSection = document.getElementById("education-section");
+        var portfolioSection = document.getElementById("portfolio-section");
+        var contactSection = document.getElementById("contact-section");
+
+        aboutSection.style.display = "none";
+        initialSection.style.display = "none";
+        educationSection.style.display = "block";
+        portfolioSection.style.display = "none";
+        contactSection.style.display = "none";
+    }
+
+    function showPortfolio() {
+        var aboutSection = document.getElementById("about-section");
+        var initialSection = document.getElementById("initial-section");
+        var educationSection = document.getElementById("education-section");
+        var portfolioSection = document.getElementById("portfolio-section");
+        var contactSection = document.getElementById("contact-section");
+
+        aboutSection.style.display = "none";
+        initialSection.style.display = "none";
+        educationSection.style.display = "none";
+        portfolioSection.style.display = "block";
+        contactSection.style.display = "none";
+    }
+
+    function showContact() {
+    var aboutSection = document.getElementById("about-section");
+    var initialSection = document.getElementById("initial-section");
+    var educationSection = document.getElementById("education-section");
+    var portfolioSection = document.getElementById("portfolio-section");
+    var contactSection = document.getElementById("contact-section");
+
+    aboutSection.style.display = "none";
+    initialSection.style.display = "none";
+    educationSection.style.display = "none";
+    portfolioSection.style.display = "none";
+    contactSection.style.display = "block";
+}
+</script>
+
+</body>
+</html>
